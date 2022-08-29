@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A63F4C628BCE08E002D8FAA /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A63F4C528BCE08E002D8FAA /* ArticleTableViewCell.xib */; };
 		6AD2CAC628BA6DAD000E4C01 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2CAC528BA6DAD000E4C01 /* ArticleModel.swift */; };
 		6AD2CACA28BA70A3000E4C01 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2CAC928BA70A3000E4C01 /* CacheManager.swift */; };
 		6AF431A028B5848A00496CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4319F28B5848A00496CB4 /* AppDelegate.swift */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A63F4C528BCE08E002D8FAA /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		6AD2CAC528BA6DAD000E4C01 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
 		6AD2CAC928BA70A3000E4C01 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		6AF4319C28B5848A00496CB4 /* Percobaan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Percobaan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 				6AF431A328B5848A00496CB4 /* ViewController.swift */,
 				6AF431ED28B5A8A300496CB4 /* DetailViewController.swift */,
 				6AF431A528B5848A00496CB4 /* Main.storyboard */,
+				6A63F4C528BCE08E002D8FAA /* ArticleTableViewCell.xib */,
 				6AF431A828B5848D00496CB4 /* Assets.xcassets */,
 				6AF431AA28B5848D00496CB4 /* LaunchScreen.storyboard */,
 				6AF431AD28B5848D00496CB4 /* Info.plist */,
@@ -246,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A63F4C628BCE08E002D8FAA /* ArticleTableViewCell.xib in Resources */,
 				6AF431AC28B5848D00496CB4 /* LaunchScreen.storyboard in Resources */,
 				6AF431A928B5848D00496CB4 /* Assets.xcassets in Resources */,
 				6AF431A728B5848A00496CB4 /* Main.storyboard in Resources */,

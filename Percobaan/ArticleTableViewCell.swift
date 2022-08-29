@@ -9,9 +9,10 @@ import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var headlineLabel: UILabel!
-    @IBOutlet weak var articleImageView: UIImageView!
     
+    @IBOutlet weak var articleImageView: UIImageView!
+    @IBOutlet weak var headlineLabel: UILabel!
+    @IBOutlet weak var cardCell: UIView!
     
     var articleToDisplay:Article?
     
@@ -20,9 +21,16 @@ class ArticleTableViewCell: UITableViewCell {
       // Clean up the cell before displaying the next article
         articleImageView.image = nil
         articleImageView.alpha = 0
-        articleImageView.layer.cornerRadius = 24
+        articleImageView.clipsToBounds = true
+        articleImageView.layer.cornerRadius = 10.0
         headlineLabel.text = ""
         headlineLabel.alpha = 0
+        
+        cardCell.layer.shadowColor = UIColor.gray.cgColor
+        cardCell.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        cardCell.layer.shadowOpacity = 1.0
+        cardCell.layer.masksToBounds = false
+        cardCell.layer.cornerRadius = 10.0
         
         
         
