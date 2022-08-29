@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AD2CAC628BA6DAD000E4C01 /* ArticleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2CAC528BA6DAD000E4C01 /* ArticleModel.swift */; };
+		6AD2CACA28BA70A3000E4C01 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD2CAC928BA70A3000E4C01 /* CacheManager.swift */; };
 		6AF431A028B5848A00496CB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF4319F28B5848A00496CB4 /* AppDelegate.swift */; };
 		6AF431A228B5848A00496CB4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF431A128B5848A00496CB4 /* SceneDelegate.swift */; };
 		6AF431A428B5848A00496CB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF431A328B5848A00496CB4 /* ViewController.swift */; };
@@ -16,6 +18,9 @@
 		6AF431B728B5848D00496CB4 /* PercobaanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF431B628B5848D00496CB4 /* PercobaanTests.swift */; };
 		6AF431C128B5848D00496CB4 /* PercobaanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF431C028B5848D00496CB4 /* PercobaanUITests.swift */; };
 		6AF431C328B5848D00496CB4 /* PercobaanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF431C228B5848D00496CB4 /* PercobaanUITestsLaunchTests.swift */; };
+		6AF431E228B5A5C900496CB4 /* ArticleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF431E128B5A5C900496CB4 /* ArticleService.swift */; };
+		6AF431E928B5A7A400496CB4 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF431E728B5A7A400496CB4 /* ArticleTableViewCell.swift */; };
+		6AF431EE28B5A8A300496CB4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AF431ED28B5A8A300496CB4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AD2CAC528BA6DAD000E4C01 /* ArticleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleModel.swift; sourceTree = "<group>"; };
+		6AD2CAC928BA70A3000E4C01 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		6AF4319C28B5848A00496CB4 /* Percobaan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Percobaan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF4319F28B5848A00496CB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6AF431A128B5848A00496CB4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		6AF431BC28B5848D00496CB4 /* PercobaanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PercobaanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AF431C028B5848D00496CB4 /* PercobaanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercobaanUITests.swift; sourceTree = "<group>"; };
 		6AF431C228B5848D00496CB4 /* PercobaanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercobaanUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6AF431E128B5A5C900496CB4 /* ArticleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleService.swift; sourceTree = "<group>"; };
+		6AF431E728B5A7A400496CB4 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		6AF431ED28B5A8A300496CB4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,18 @@
 		6AF4319E28B5848A00496CB4 /* Percobaan */ = {
 			isa = PBXGroup;
 			children = (
+				6AF431E728B5A7A400496CB4 /* ArticleTableViewCell.swift */,
 				6AF4319F28B5848A00496CB4 /* AppDelegate.swift */,
 				6AF431A128B5848A00496CB4 /* SceneDelegate.swift */,
 				6AF431A328B5848A00496CB4 /* ViewController.swift */,
+				6AF431ED28B5A8A300496CB4 /* DetailViewController.swift */,
 				6AF431A528B5848A00496CB4 /* Main.storyboard */,
 				6AF431A828B5848D00496CB4 /* Assets.xcassets */,
 				6AF431AA28B5848D00496CB4 /* LaunchScreen.storyboard */,
 				6AF431AD28B5848D00496CB4 /* Info.plist */,
+				6AF431E128B5A5C900496CB4 /* ArticleService.swift */,
+				6AD2CAC528BA6DAD000E4C01 /* ArticleModel.swift */,
+				6AD2CAC928BA70A3000E4C01 /* CacheManager.swift */,
 			);
 			path = Percobaan;
 			sourceTree = "<group>";
@@ -258,9 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD2CACA28BA70A3000E4C01 /* CacheManager.swift in Sources */,
 				6AF431A428B5848A00496CB4 /* ViewController.swift in Sources */,
+				6AF431E928B5A7A400496CB4 /* ArticleTableViewCell.swift in Sources */,
 				6AF431A028B5848A00496CB4 /* AppDelegate.swift in Sources */,
+				6AF431E228B5A5C900496CB4 /* ArticleService.swift in Sources */,
 				6AF431A228B5848A00496CB4 /* SceneDelegate.swift in Sources */,
+				6AF431EE28B5A8A300496CB4 /* DetailViewController.swift in Sources */,
+				6AD2CAC628BA6DAD000E4C01 /* ArticleModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
