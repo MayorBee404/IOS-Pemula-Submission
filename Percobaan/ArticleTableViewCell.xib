@@ -18,19 +18,19 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8q-d3-Tr7">
-                        <rect key="frame" x="36" y="15" width="332" height="276"/>
+                        <rect key="frame" x="24" y="15" width="356" height="276"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8FV-zH-F7l">
-                                <rect key="frame" x="0.0" y="0.0" width="332" height="219.33333333333334"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="thumbnail" translatesAutoresizingMaskIntoConstraints="NO" id="8FV-zH-F7l">
+                                <rect key="frame" x="0.0" y="0.0" width="356" height="219.33333333333334"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0l-0c-DDc">
-                                <rect key="frame" x="10" y="251.66666666666671" width="312" height="14.333333333333343"/>
+                                <rect key="frame" x="10" y="251.66666666666671" width="336" height="14.333333333333343"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpn-gp-g4U">
-                                <rect key="frame" x="10" y="229.33333333333334" width="312" height="19.333333333333343"/>
+                                <rect key="frame" x="10" y="229.33333333333334" width="336" height="19.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -53,21 +53,23 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="x8q-d3-Tr7" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="4" id="Ax4-53-sI3"/>
-                    <constraint firstAttribute="trailingMargin" secondItem="x8q-d3-Tr7" secondAttribute="trailing" constant="16" id="L3U-Ri-bM0"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="x8q-d3-Tr7" secondAttribute="trailing" constant="4" id="CtV-gx-3KL"/>
+                    <constraint firstItem="x8q-d3-Tr7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="P2P-R2-Evs"/>
                     <constraint firstAttribute="bottomMargin" secondItem="x8q-d3-Tr7" secondAttribute="bottom" constant="4" id="ec2-70-6Mo"/>
-                    <constraint firstItem="x8q-d3-Tr7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="16" id="tDh-AN-msl"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="articleImageView" destination="8FV-zH-F7l" id="B1z-dW-joa"/>
                 <outlet property="cardCell" destination="x8q-d3-Tr7" id="tXY-Py-U5X"/>
+                <outlet property="datePublished" destination="J0l-0c-DDc" id="IdR-6Z-DM9"/>
                 <outlet property="headlineLabel" destination="xpn-gp-g4U" id="1IQ-kd-XpO"/>
             </connections>
             <point key="canvasLocation" x="198.55072463768118" y="87.228260869565219"/>
         </tableViewCell>
     </objects>
     <resources>
+        <image name="thumbnail" width="354" height="232"/>
         <namedColor name="CoderianColor">
             <color red="0.72200000286102295" green="0.082000002264976501" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

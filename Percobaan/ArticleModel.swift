@@ -20,3 +20,4 @@ struct Article : Decodable {
     let urlToImage:String?
     let publishedAt:String?
 }
+

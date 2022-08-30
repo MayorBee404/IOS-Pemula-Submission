@@ -13,6 +13,7 @@ class ArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var articleImageView: UIImageView!
     @IBOutlet weak var headlineLabel: UILabel!
     @IBOutlet weak var cardCell: UIView!
+    @IBOutlet weak var datePublished: UILabel!
     
     var articleToDisplay:Article?
     
@@ -32,13 +33,26 @@ class ArticleTableViewCell: UITableViewCell {
         cardCell.layer.masksToBounds = false
         cardCell.layer.cornerRadius = 10.0
         
-        
-        
         // Keep a reference to the article
         articleToDisplay = article
         
         // Set the headline
         headlineLabel.text = articleToDisplay!.title
+        
+        //Dated Formated
+        let dateString: String? = articleToDisplay!.publishedAt
+
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        if let date = dateFormatter.date(from: dateString!)
+        {
+          let outputFormatter = DateFormatter()
+          outputFormatter.locale = Locale(identifier: "en_US_POSIX")
+          outputFormatter.dateFormat = "dd MMMM hh:mm aaa"
+          let outputDate = outputFormatter.string(from: date)
+        datePublished.text = "Published at \(String(describing: outputDate))"
+        }
         
         // Animated the label into view
         UIView.animate(withDuration: 0.6, delay: 0, options: .curveEaseOut, animations: {
@@ -46,8 +60,7 @@ class ArticleTableViewCell: UITableViewCell {
             self.headlineLabel.alpha = 1
             
         }, completion: nil)
-            
-            
+        
         // Download and display the image
         
         // Check the article actually has an image
