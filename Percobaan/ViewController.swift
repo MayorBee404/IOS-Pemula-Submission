@@ -18,17 +18,43 @@ class ViewController:UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.register(UINib(nibName: "ArticleTableViewCell", bundle: nil),forCellReuseIdentifier: "cell")
-        
-        // Get the articles from the article model
-        model.delegate = self
-        model.getArticles()
-    
+        networkCheck()
         title = "CODERIAN APP"
-    }
+        
+        //Network Monitor
+        func networkCheck(){
+            if NetworkMonitor.shared.isConnected {
+                print("Connected")
+                self.showSpinner()
+                loadData()
+            } else {
+                print("Not connected")
+                self.showSpinner()
+                showConnectionAlert()
+            }
+        }
+        func showConnectionAlert() {
+            let alert = UIAlertController(title: "Connection Problem", message: "Make sure your device is connected to an internet and try to restart the app!", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+            exit(-1)
+            }))
+            self.present(alert, animated: true)
+            }
+        }
+        
+        // Do any additional setup after loading the view.
+        func loadData() {
+            self.removeSpinner()
+            tableView.dataSource = self
+            tableView.delegate = self
+            tableView.register(UINib(nibName: "ArticleTableViewCell", bundle: nil),forCellReuseIdentifier: "cell")
+            
+            // Get the articles from the article model
+            model.delegate = self
+            model.getArticles()
+        }
+        
 }
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource{
@@ -71,4 +97,23 @@ extension ViewController:  ArticleModernProtocol{
         tableView.reloadData()
     }
     
+}
+fileprivate var aView: UIView?
+extension ViewController {
+
+    func showSpinner() {
+        aView = UIView(frame: self.view.bounds)
+        aView?.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        
+        let ai = UIActivityIndicatorView(style: .large)
+        ai.center = aView!.center
+        ai.startAnimating()
+        aView?.addSubview(ai)
+        self.view.addSubview(aView!)
+    }
+    
+    func removeSpinner() {
+        aView?.removeFromSuperview()
+        aView = nil
+    }
 }
