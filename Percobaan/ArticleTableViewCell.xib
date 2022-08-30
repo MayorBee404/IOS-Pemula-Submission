@@ -3,6 +3,7 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,24 +21,33 @@
                         <rect key="frame" x="36" y="15" width="332" height="276"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8FV-zH-F7l">
-                                <rect key="frame" x="0.0" y="0.0" width="332" height="226"/>
+                                <rect key="frame" x="0.0" y="0.0" width="332" height="219.33333333333334"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0l-0c-DDc">
+                                <rect key="frame" x="10" y="251.66666666666671" width="312" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpn-gp-g4U">
-                                <rect key="frame" x="10" y="236" width="312" height="30"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="10" y="229.33333333333334" width="312" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="CoderianColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="xpn-gp-g4U" secondAttribute="trailing" constant="10" id="0hw-eg-AiR"/>
                             <constraint firstItem="8FV-zH-F7l" firstAttribute="top" secondItem="x8q-d3-Tr7" secondAttribute="top" id="JSK-RF-cYw"/>
-                            <constraint firstAttribute="bottom" secondItem="xpn-gp-g4U" secondAttribute="bottom" constant="10" id="N6A-Cg-kUM"/>
                             <constraint firstItem="xpn-gp-g4U" firstAttribute="top" secondItem="8FV-zH-F7l" secondAttribute="bottom" constant="10" id="QKC-1c-SZ0"/>
+                            <constraint firstItem="J0l-0c-DDc" firstAttribute="leading" secondItem="x8q-d3-Tr7" secondAttribute="leading" constant="10" id="ZJs-jQ-kke"/>
                             <constraint firstItem="8FV-zH-F7l" firstAttribute="leading" secondItem="x8q-d3-Tr7" secondAttribute="leading" id="a6a-Ut-rR4"/>
+                            <constraint firstItem="J0l-0c-DDc" firstAttribute="top" secondItem="xpn-gp-g4U" secondAttribute="bottom" constant="3" id="axc-Wu-Wak"/>
                             <constraint firstItem="xpn-gp-g4U" firstAttribute="leading" secondItem="x8q-d3-Tr7" secondAttribute="leading" constant="10" id="eMI-Do-dAf"/>
+                            <constraint firstAttribute="bottom" secondItem="J0l-0c-DDc" secondAttribute="bottom" constant="10" id="hTV-bV-mxw"/>
                             <constraint firstAttribute="trailing" secondItem="8FV-zH-F7l" secondAttribute="trailing" id="jtW-ZT-8dK"/>
+                            <constraint firstAttribute="trailing" secondItem="J0l-0c-DDc" secondAttribute="trailing" constant="10" id="wsE-Pu-JwS"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -57,4 +67,9 @@
             <point key="canvasLocation" x="198.55072463768118" y="87.228260869565219"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <namedColor name="CoderianColor">
+            <color red="0.72200000286102295" green="0.082000002264976501" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
