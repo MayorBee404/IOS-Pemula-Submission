@@ -165,7 +165,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view autoresizesSubviews="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOE-LK-yKk">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
+                                <rect key="frame" x="0.0" y="221" width="375" height="569"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="center" axis="vertical" alignment="lastBaseline" translatesAutoresizingMaskIntoConstraints="NO" id="CIX-tK-OLH">
                                         <rect key="frame" x="72" y="85.333333333333314" width="231" height="191"/>
@@ -195,7 +195,7 @@
                                         <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                     </stackView>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Developed By" translatesAutoresizingMaskIntoConstraints="NO" id="X9K-BJ-X9l">
-                                        <rect key="frame" x="68" y="410" width="240" height="65"/>
+                                        <rect key="frame" x="68" y="442" width="240" height="65"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="65" id="BAF-uo-27U"/>
                                         </constraints>
@@ -236,9 +236,9 @@
                         <viewLayoutGuide key="safeArea" id="IkA-as-MqK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="IkA-as-MqK" firstAttribute="bottom" secondItem="AOE-LK-yKk" secondAttribute="bottom" id="5Ov-ji-wUa"/>
                             <constraint firstItem="AOE-LK-yKk" firstAttribute="top" secondItem="IkA-as-MqK" secondAttribute="top" constant="177" id="9nt-ic-uoI"/>
                             <constraint firstItem="7nS-un-ukq" firstAttribute="top" secondItem="IkA-as-MqK" secondAttribute="top" constant="52" id="P9p-hx-8Fs"/>
+                            <constraint firstAttribute="bottom" secondItem="AOE-LK-yKk" secondAttribute="bottom" constant="-32" id="TU6-T9-FLb"/>
                             <constraint firstItem="AOE-LK-yKk" firstAttribute="leading" secondItem="IkA-as-MqK" secondAttribute="leading" id="WmR-rn-iOP"/>
                             <constraint firstItem="IkA-as-MqK" firstAttribute="trailing" secondItem="AOE-LK-yKk" secondAttribute="trailing" id="sQE-Sp-InL"/>
                             <constraint firstItem="7nS-un-ukq" firstAttribute="centerX" secondItem="AOE-LK-yKk" secondAttribute="centerX" id="zwF-wl-cd6"/>
@@ -255,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r76-fr-Zfm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1587.6923076923076" y="-599.28909952606637"/>
+            <point key="canvasLocation" x="1586.4000000000001" y="-600"/>
         </scene>
     </scenes>
     <resources>
