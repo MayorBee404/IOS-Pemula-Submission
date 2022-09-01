@@ -54,6 +54,13 @@ class ViewController:UIViewController{
             model.delegate = self
             model.getArticles()
         }
+    
+    //Show Profile
+    @IBAction func showProfile(_ sender: UIBarButtonItem) {
+        let profile = ProfileViewController(nibName: "ProfileViewController", bundle: nil)
+        self.navigationController?.pushViewController(profile, animated: true)
+        
+    }
         
 }
 
@@ -88,12 +95,8 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
       for segue: UIStoryboardSegue,
       sender: Any?
     ) {
-
-      // MARK: Mecocokkan ID dan tujuan ViewController dari segue
       if segue.identifier == "moveToDetail" {
         if let detaiViewController = segue.destination as? DetailViewController {
-
-          // MARK: Jika sesuai, data akan dikirim ke DetailViewController.
             detaiViewController.toDisplay = sender as? Article
         }
       }
@@ -101,7 +104,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
 }
 extension ViewController:  ArticleModernProtocol{
     
-    //MARK: - Article Model Protocol Methods
+    // Article Model Protocol Methods
     
     func articleRetrived(_ article: [Article]) {
         
@@ -113,6 +116,8 @@ extension ViewController:  ArticleModernProtocol{
     }
     
 }
+
+// Spinner Loading
 fileprivate var aView: UIView?
 extension ViewController {
 

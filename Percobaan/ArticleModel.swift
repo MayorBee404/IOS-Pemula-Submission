@@ -19,5 +19,6 @@ struct Article : Decodable {
     let url:String?
     var urlToImage:String?
     let publishedAt:String?
+    let content:String?
 }
 
