@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="uMP-bb-cMa">
-                                <rect key="frame" x="0.0" y="140" width="375" height="638"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="686"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -28,7 +28,7 @@
                         <constraints>
                             <constraint firstItem="uMP-bb-cMa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8MN-6D-8uM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uMP-bb-cMa" secondAttribute="trailing" id="QSZ-4U-uzK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uMP-bb-cMa" secondAttribute="bottom" id="luY-UQ-q5W"/>
+                            <constraint firstItem="uMP-bb-cMa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="48" id="p8z-J8-uKb"/>
                             <constraint firstItem="uMP-bb-cMa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="sPj-Q5-oSW"/>
                         </constraints>
                     </view>
