@@ -16,7 +16,7 @@ class ArticleTableViewCell: UITableViewCell {
     @IBOutlet weak var datePublished: UILabel!
     
     var articleToDisplay:Article?
-    
+
     func displaArticle(_ article:Article) {
         
       // Clean up the cell before displaying the next article

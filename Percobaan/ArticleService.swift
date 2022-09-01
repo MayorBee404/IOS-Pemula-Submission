@@ -20,7 +20,7 @@ class ArticleService {
         // Fire off the request to the API
         
         // Create a string URL
-        let stringUrl = "https://newsapi.org/v2/everything?q=apple&from=2022-08-28&to=2022-08-28&sortBy=popularity&apiKey=ee4c66c8ac7949afada05f49a74d37b4"
+        let stringUrl = "https://newsapi.org/v2/everything?q=apple&tech&apiKey=ee4c66c8ac7949afada05f49a74d37b4"
         
         // Create a URL object
         let url = URL(string: stringUrl)
@@ -69,9 +69,6 @@ class ArticleService {
        
         // Start the data task
         dataTask.resume()
-        
-        
-        
         
     }
 }

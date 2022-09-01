@@ -79,10 +79,25 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         // User has just selected a row, trigger the seque to go to detail
-        performSegue(withIdentifier: "goToDetail", sender: self)
-        
+        performSegue(
+          withIdentifier: "moveToDetail",
+          sender: articles[indexPath.row]
+        )
+      }
+    override func prepare(
+      for segue: UIStoryboardSegue,
+      sender: Any?
+    ) {
+
+      // MARK: Mecocokkan ID dan tujuan ViewController dari segue
+      if segue.identifier == "moveToDetail" {
+        if let detaiViewController = segue.destination as? DetailViewController {
+
+          // MARK: Jika sesuai, data akan dikirim ke DetailViewController.
+            detaiViewController.toDisplay = sender as? Article
+        }
+      }
     }
-    
 }
 extension ViewController:  ArticleModernProtocol{
     
