@@ -1,6 +1,6 @@
 # IOS-Pemula-Submission
-Dicoding
-Berjalan dengan baik pada Iphone 13
+Dicoding</strong>
+*Berjalan dengan baik pada Iphone 13*
 
 <img src="https://github.com/MayorBee404/IOS-Pemula-Submission/blob/main/Screenshoot/image%201.png"
      alt="Submission "
